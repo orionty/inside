@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+  }
+
+  #animation {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(5, 5, 5), #fff, rgb(255, 191, 53));
+    letter-spacing: 3px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 7s linear infinite;
+    position: relative; 
+  }
+
+  @keyframes shine {
+    0% {
+      background-position-x: -500%;
+    }
+    100% {
+      background-position-x: 500%;
+    }
+  }
+
+  
+  body
+  {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+  .navbar-collapse
+  {
+      justify-content: flex-end;
+  }
+  .customnav:hover
+  {
+      background-color: rgb(163, 50, 50);
+      height: 40px;
+  }
+  @media (min-width: 992px)
+  {
+      .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 1.5rem;
+          padding-left: 1.5rem;
+      }
+  }
+  
+  .custombg
+  {
+      background-image: url('../assets/Bluenose.jpg');
+      background-size: cover;
+      background-size: 100%;
+      background-repeat: no-repeat;
+  }
+  .card
+  {
+      border: none;
+      margin-top: 15px;
+  }
+  .card-body
+  {
+      background-color: rgb(27, 26, 26);
+  }
+  .card-title, .card-text
+  {
+      font-size: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .h5 {
+      font-size: 1.25rem;
+  }
+  /*********Newsletter******/
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+        font-family: arial;
+    }
+    .newsletter {
+        /*background-color: rgb(12, 11, 11);*/
+        padding: 80px 15px;
+        color: #fff;
+        /*border: 1px solid rgb(73, 3, 3);*/
+    }
+    .newsletter h2, .newsletter p{
+        text-align: center;
+        line-height: 34px;
+    }
+    .newsletter-box {
+        margin: 20px auto;
+        display: table;
+    }
+    .newsletter-box i {
+        background: #f7f7f7;
+        width: 60px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        color: rgb(163, 50, 50);
+        border-right: 1px solid #ddd;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 42px;
+    }
+    .newsletter .newsletter-box button {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: #fff;
+        padding: 0 15px;
+        font-size: 14px;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-left: 0px;
+        height: 42px;
+        margin-top: 5px;
+    }
+    .emailbox{
+        border: none;
+        outline: none;
+    }
+    .emailbox {
+        width: 0px;
+        height: 42px;
+        transition: 0.6s;
+        font-size: 16px;
+    }
+    .newsletter-box:hover > .emailbox, .emailbox:focus{
+        width: 280px;
+        padding: 0 10px;
+    }
+  
+    .newsletterbg
+    {
+      background-color: rgb(0, 0, 0);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  
+    .aboutbg
+    {
+      background-color: rgb(0, 0, 0);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    .customh1
+    {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  
+    .contactbg
+    {
+        background-image: url("../assets/contactbg.jpg");
+        background-repeat: no-repeat;
+        clear: both;
+    }
+    
+    a {
+      color: white;
+      text-decoration: none;
+  }
+  a:hover
+  {
+      color: white;
+  }
+  
+  /*Galleries*/
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .gcontainer {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  /********************Responsive Image Grid *******************************/
+  
+
